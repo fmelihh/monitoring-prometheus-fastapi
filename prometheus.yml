@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 10s
+
+scrape_configs:
+  - job_name: 'hello-world-api'
+    static_configs:
+      - targets: ['hello-world-api:8000']
